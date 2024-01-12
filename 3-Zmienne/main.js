@@ -110,6 +110,7 @@ const userName = "Adam";
 let points = 200;
 // Zmiennej var możemy używać, ale bardzo rzadko ma to sens (w małych projektach na stronkach).
 var userLastLoginDate = "15.10.2018";
+console.log("Hello");
 
 // LISTA SŁÓW ZAREZERWOWANYCH (nie można używać jako nazwy zmiennych)
 /* 
