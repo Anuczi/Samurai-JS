@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   ------------------------  T A S K   1  --------------------------//
+
+      const calculateAvarage = function (numbers) {
+        let sum = 0;
+
+        for (let index = 0; index < numbers.length; index++) {
+          const number = numbers[index];
+          sum += number;
+        }
+
+        return sum / numbers.length;
+      };
+
+      const result = calculateAvarage([2, 4, 5]);
+      //   console.log(result);
+
+      // ---------------------------  T A S K   2   -----------------------//
+      const filterEvenNumbers = function (numbers) {
+        const evenArray = [];
+        for (let i = 0; i < numbers.length; i++) {
+          const number = numbers[i];
+          if (number % 2 === 0) {
+            // console.log(evenArray[number]);
+            evenArray.push(number);
+          } else {
+            // console.log(number);
+          }
+        }
+        return evenArray;
+      };
+
+      const result2 = filterEvenNumbers([1, 2, 3, 4, 5, 6]);
+      //   console.log(result2);
+
+      //  ---------------------------  T A S K  3  ---------------------------------//
+
+      const countOccurrences = function (tablica, string) {
+        // const newTablica = [];
+        let count = 0;
+        for (let index = 0; index < tablica.length; index++) {
+          const element = tablica[index];
+
+          if (string === element) {
+            // newTablica.push(string);
+            count++;
+          }
+        }
+        // return newTablica.length;
+        return count;
+      };
+
+      const result3 = countOccurrences(
+        ["apple", "banana", "apple", "orange", "banana"],
+        "banana"
+      );
+      console.log(result3);
+    </script>
+  </body>
+</html>
